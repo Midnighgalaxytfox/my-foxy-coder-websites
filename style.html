@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Foxy Coder</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url('https://assets.artimator.io/l7327ftpgq5u6hr3jj6n8lxdzlfm');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 100%;
+            height: 10px;
+            background-color: darkred;
+        }
+
+        nav {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        nav a.active {
+            background-color: darkblue;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .content h2 {
+            color: #007bff;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .row img {
+            width: 75px;
+            height: 75px;
+            margin-right: 1rem;
+        }
+
+        .row ul {
+            list-style-type: disc;
+            color: lightgray;
+        }
+
+        #slideshow {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #slideshow img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px darkred;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .content {
+                padding: 1rem;
+            }
+
+            .row img {
+                width: 50px;
+                height: 50px;
+                margin-right: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="slideshow">
+        <img src="https://assets.artimator.io/shy4bxv4mmfxx0cqyauy6z0tvmyl" alt="Slideshow Image 1" width="100" height="199">
+        <img src="https://assets.artimator.io/afxxokn186ydk1wq4ookasjck588" alt="Slideshow Image 2" width="100" height="199">
+        <img src="https://assets.artimator.io/rwo0bv5k7tv1vghc09gc55z87il9" alt="Slideshow Image 3" width="100" height="199">
+        <img src="https://assets.artimator.io/pxr684l9ut3mea1kermicx25rciw" alt="Slideshow Image 4" width="100" height="199">
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h1>Team Foxy Coder</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="tab-link active" data-target="how-to-code">How to Code</a></li>
+            <li><a href="#" class="tab-link" data-target="steps-to-code">Steps to Code</a></li>
+            <li><a href="#" class="tab-link" data-target="input-photos">How to Input Photos</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div id="how-to-code" class="tab-content active">
+            <div class="row">
+                <img src="https://preview.imggen.ai/uploads/73e103c2-6cc5-40e9-8d64-43b7cc7d9a96/tN7BwWo2J4HGb.jpeg?sharpen=true" alt="Step 1" width="75" height="75">
+                <div>
+                    <h2>Step 1: Learn the Basics</h2>
+                    <ul>
+                        <li>Understand basic programming concepts</li>
+                        <li>Choose a programming language to start with</li>
+                        <li>Explore online tutorials and resources</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="steps-to-code" class="tab-content">
+            <div class="row">
+                <img src="https://preview.imggen.ai/uploads/6e22ae8a-4acb-43d1-8d19-8d0f5a46c854/Pe9XmuXYQKB8b.jpeg?sharpen=true" alt="Step 2" width="75" height="75">
+                <div>
+                    <h2>Step 2: Practice Regularly</h2>
+                    <ul>
+                        <li>Code every day to build your skills</li>
+                        <li>Work on small projects to apply what you've learned</li>
+                        <li>Join coding communities and participate in coding challenges</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="input-photos" class="tab-content">
+            <div class="row">
+                <img src="https://preview.imggen.ai/uploads/ba63a337-5ce6-4cc9-b26a-476a928c5a0f/FOF4_VrRIkxeb.jpeg?sharpen=true" alt="Step 3" width="75" height="75">
+                <div>
+                    <h2>Step 3: Inputting Photos</h2>
+                    <ul>
+                        <li>Learn how to use image tags in HTML</li>
+                        <li>Explore CSS for styling images</li>
+                        <li>Use JavaScript for dynamic image manipulation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-link');
+            const contents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    // Remove active class from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to the clicked tab and corresponding content
+                    const target = document.getElementById(tab.getAttribute('data-target'));
+                    tab.classList.add('active');
+                    target.classList.add('active');
+                });
+            });
+
+            // JavaScript for slideshow functionality
+            const images = document.querySelectorAll('#slideshow img');
+            let currentImageIndex = 0;
+
+            function showNextImage() {
+                images[currentImageIndex].style.display = 'none';
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                images[currentImageIndex].style.display = 'block';
+            }
+
+            // Show the first image initially
+            images[currentImageIndex].style.display = 'block';
+
+            // Automatically switch to the next image every 3 seconds
+            setInterval(showNextImage, 3000);
+        });
+    </script>
+</body>
+</html>
